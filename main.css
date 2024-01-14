@@ -10,11 +10,14 @@
 }
 nav .logo {
     margin: 10px 0 10px 120px;
-    color:#000;
     font-weight: 800;
     font-size: 1.6rem;
     cursor: pointer;
     display: inline-block;
+}
+nav .logo a {
+    text-decoration: none;
+    color:#000;
 }
 nav ul{
     float: right;
@@ -157,49 +160,6 @@ footer{
     border-top: 1px solid grey;
     margin-top: 64px;
 }
-@keyframes bounce {
-    0%   { transform: translateY(0); }
-    30%  { transform: translateY(-15px); }
-    50%  { transform: translateY(0); }
-    100% { transform: translateY(0); }
-}
-
-@media (max-width: 952px){
-
-    nav ul li a{
-      display: none;
-    }
-    .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 0%;
-    }
-    .about p {
-        margin: 32px;
-    }
-    .row {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-  }
-
-@media (max-width: 858px){
-    nav ul li a{
-        display: none;
-    }
-    .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 0%;
-    }
-    .about p {
-        margin: 32px;
-    }
-}
-
 .reveal{
     position: relative;
     transform: translateX(-150px);
@@ -267,7 +227,7 @@ footer{
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], input[type=email], input[type=subject], textarea {
-    width: 150%; /* Full width */
+    width: 200%; /* Full width */
     padding: 6px; /* Some padding */ 
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
@@ -293,4 +253,121 @@ input[type=text], input[type=email], input[type=subject], textarea {
     color: #fff;
     transition: 0.1s all ease; 
 }
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-15px); }
+    50%  { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
+
+@media (max-width: 952px){
+
+      nav ul li{
+        display: none;
+      }
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0%;
+    }
+    .about p {
+        margin: 32px;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container-contact {
+        flex-direction: column;
+        margin-left: 0;
+        justify-content: center;
+        display: flex;
+    }
+    .contact-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .container-box form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+    input[type=text], input[type=email], input[type=subject], textarea {
+        width: 100%; /* Full width */
+    }
+    nav .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .content-contact {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+      }
+  }
+
+@media (max-width: 858px){
+      nav ul li{
+        display: none;
+      }
+      .content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-left: 0;
+      }
+      .about p {
+          margin: 32px;
+      }
+      .row {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+      .container-contact {
+          flex-direction: column;
+          margin-left: 0;
+          justify-content: center;
+          display: flex;
+      }
+      .contact-box {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-left: 0;
+      }
+      .container-box form{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+  
+      }
+      input[type=text], input[type=email], input[type=subject], textarea {
+          width: 100%; /* Full width */
+      }
+      nav .logo {
+          display: flex;
+          margin: 0;
+          justify-content: center;
+      }
+      .container-contact {
+        text-align: center;
+      }
+
+    
+}
+
   
